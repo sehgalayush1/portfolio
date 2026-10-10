@@ -2,6 +2,12 @@
 
 A small, intentionally generic static-site placeholder for Phase 1 of the portfolio project. It uses plain HTML and CSS, with no personal or project details, JavaScript, framework, or build step.
 
+## Live preview
+
+The current site is available at [https://happy-island-03fc6e900.4.azurestaticapps.net](https://happy-island-03fc6e900.4.azurestaticapps.net).
+
+This Azure-generated URL is temporary. The README link will be replaced with the final custom domain in Phase 3.
+
 ## Run locally
 
 From the repository root, start Python's built-in static web server with `src` as its document root:
