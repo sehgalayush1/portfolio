@@ -28,10 +28,11 @@ Phase 1 is limited to validating the static-site and deployment setup. Real port
 
 ### 3. Create a personal GitHub repository and push the code
 
-- [ ] Connect to the user's personal GitHub account.
-- [ ] Decide the repository name and visibility.
-- [ ] Create a new repository.
-- [ ] Push the locally tested code to the chosen default branch.
+- [x] Connect to the user's personal GitHub account using GitHub CLI.
+- [x] Create the public `portfolio` repository.
+- [x] Push the locally tested code to the `main` branch.
+
+**Created:** [sehgalayush1/portfolio](https://github.com/sehgalayush1/portfolio) (public, default branch: `main`).
 
 **Complete when:** the GitHub repository contains the tested site and its latest commit is available remotely.
 
