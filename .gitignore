@@ -1,0 +1,7 @@
+# Local-only workspace context and settings
+/.memory/
+/.github/
+/.vscode/
+
+# Local-only Azure deployment test helper
+/deploy-local-test.ps1

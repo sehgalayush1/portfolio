@@ -2,21 +2,11 @@
 
 A small, intentionally generic static-site placeholder for Phase 1 of the portfolio project. It uses plain HTML and CSS, with no personal or project details, JavaScript, framework, or build step.
 
-## Run locally
+## Live preview
 
-From the repository root, start Python's built-in static web server with `src` as its document root:
+The current site is available at [https://happy-island-03fc6e900.4.azurestaticapps.net](https://happy-island-03fc6e900.4.azurestaticapps.net).
 
-```powershell
-py -m http.server 8000 --directory src
-```
-
-If the `py` launcher is unavailable, use:
-
-```powershell
-python -m http.server 8000 --directory src
-```
-
-Then open [http://localhost:8000](http://localhost:8000) in a browser. Stop the server with `Ctrl+C`.
+This Azure-generated URL is temporary. The README link will be replaced with the final custom domain in Phase 3.
 
 ## Project files
 
