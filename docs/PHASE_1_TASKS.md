@@ -38,20 +38,26 @@ Phase 1 is limited to validating the static-site and deployment setup. Real port
 
 ### 4. Create an Azure Static Web App and deploy locally
 
-- [ ] Connect to the user's Azure account.
-- [ ] Create a new Azure Static Web Apps resource, initially using the Free plan if suitable.
-- [ ] Deploy the local site to the resource without relying on GitHub Actions yet.
-- [ ] Use the Azure-generated URL; do not configure or purchase a custom domain in this phase.
-- [ ] Store any deployment credentials securely and do not add them to the repository.
+- [x] Connect to the user's Azure account.
+- [x] Create a new Azure Static Web Apps resource, initially using the Free plan if suitable.
+- [x] Deploy the local site to the resource without relying on GitHub Actions yet.
+- [x] Use the Azure-generated URL; do not configure or purchase a custom domain in this phase.
+- [x] Store any deployment credentials securely and do not add them to the repository.
+
+**Created:** Free Static Web App `portfolio` in resource group `rg-portfolio` (East Asia), replacing the deleted `portfolio-phase-one` resource.
+
+**Deployed URL:** https://happy-island-03fc6e900.4.azurestaticapps.net
 
 **Complete when:** a deployment from the local project succeeds and Azure provides the app's default URL.
 
 ### 5. Verify the Azure deployment
 
-- [ ] Open the Azure-generated URL in a browser.
-- [ ] Confirm the deployed page, styles, scripts, and interactions match the locally tested version.
-- [ ] Check desktop and mobile layouts, browser-console errors, and failed asset requests.
-- [ ] Fix and redeploy any issues found.
+- [x] Open the Azure-generated URL in a browser.
+- [x] Confirm the deployed page, styles, scripts, and interactions match the locally tested version.
+- [x] Check desktop and mobile layouts, browser-console errors, and failed asset requests.
+- [x] Fix and redeploy any issues found (none found).
+
+**Verification:** The page and stylesheet loaded; all internal navigation targets resolved and the main navigation worked. No console errors, page errors, failed requests, or unsuccessful HTTP responses were observed. No horizontal overflow was found at 1440, 1024, 768, 390, or 320 px viewport widths.
 
 **Complete when:** the placeholder has been verified working at its Azure URL.
 
