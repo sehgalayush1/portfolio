@@ -1,6 +1,7 @@
 # Local-only workspace context and settings
 /.memory/
-/.github/
+/.github/*
+!/.github/workflows/
 /.vscode/
 
 # Local-only Azure deployment test helper

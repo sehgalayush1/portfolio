@@ -29,7 +29,7 @@ Use a single Azure Static Web Apps resource, with no persistent staging environm
 The deployment flow is:
 
 1. Create a feature branch from `main` and open a pull request targeting `main`.
-2. GitHub Actions runs the agreed validation checks and deploys the pull request to its preview URL.
+2. GitHub Actions deploys the pull request to its preview URL; automated code checks are deferred.
 3. Review and test the preview. New commits to the pull request update that preview.
 4. Merge the approved pull request to `main` to deploy the change to production.
 
@@ -54,14 +54,15 @@ This provides a place to test each change before it goes live. A persistent stag
 
 ## CI/CD and secret handling
 
-- Run lightweight checks, such as HTML validation and link checking, in GitHub Actions before deploying.
+- The initial workflow is deployment-only; automated code checks, such as HTML validation and link checking, are deferred.
 - Keep the Azure deployment credential in GitHub Actions secrets; never commit it to the repository.
-- The exact checks and branch protection rules remain to be chosen.
+- The workflow at `.github/workflows/azure-static-web-apps.yml` deploys `src/` directly with `skip_app_build: true` and expects the repository secret `AZURE_STATIC_WEB_APPS_API_TOKEN`.
+- GitHub's automatic `GITHUB_TOKEN` is used to post PR preview links. No personal access token is required.
 
 ## Open decisions
 
 - Select and register the domain; decide whether the canonical hostname is the apex domain or a `www` subdomain.
-- Decide which automated checks must pass before a deployment.
+- Decide which automated checks to introduce later and whether to require them before merging.
 - Confirm the Azure hosting plan and quotas at provisioning time.
 
 ## Microsoft Learn references
