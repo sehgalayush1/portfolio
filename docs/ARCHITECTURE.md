@@ -58,7 +58,6 @@ This provides a place to test each change before it goes live. A persistent stag
 - Keep the Azure deployment credential in GitHub Actions secrets; never commit it to the repository.
 - The workflow at `.github/workflows/azure-static-web-apps.yml` deploys `src/` directly with `skip_app_build: true` and expects the repository secret `AZURE_STATIC_WEB_APPS_API_TOKEN`.
 - GitHub's automatic `GITHUB_TOKEN` is used to post PR preview links. No personal access token is required.
-- Workflow implementation is present locally; secret configuration and production/preview lifecycle verification remain pending.
 
 ## Open decisions
 
