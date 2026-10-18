@@ -68,8 +68,8 @@ Phase 1 is limited to validating the static-site and deployment setup. Real port
 - [x] Configure pull-request preview deployments and cleanup when a pull request closes.
 - [x] Store the Azure deployment token as a GitHub Actions secret, not in workflow source.
 - [x] Run the workflow and verify a pull-request preview.
-- [ ] Verify a production deployment.
-- [ ] Verify preview cleanup when a pull request closes.
+- [x] Verify a production deployment.
+- [x] Verify preview cleanup when a pull request closes.
 
 **Complete when:** GitHub Actions successfully deploys production changes and creates and removes pull-request previews as expected.
 

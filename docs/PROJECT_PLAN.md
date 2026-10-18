@@ -23,6 +23,8 @@ Create a concise static portfolio that complements the resume and showcases expe
 
 ### Phase 1 — Dummy site and deployment foundation
 
+**Status:** Complete.
+
 - Create a minimal placeholder site using HTML, CSS, and simple JavaScript.
 - Keep the placeholder generic; do not include real portfolio content yet.
 - Put the code in a personal GitHub repository and create an Azure Static Web App.
@@ -31,6 +33,9 @@ Create a concise static portfolio that complements the resume and showcases expe
 - **Deliverable:** a working placeholder site on its Azure URL, with production deployment and PR previews verified.
 
 ### Phase 2 — Content, design, and portfolio implementation
+
+See [PHASE_2_TASKS.md](./PHASE_2_TASKS.md) for the task checklist and completion criteria.
+See [PORTFOLIO_BRIEF.md](./PORTFOLIO_BRIEF.md) for the approved audience, positioning, and primary visitor action.
 
 - Create a separate design document for the portfolio content and visual direction.
 - Gather and curate company history, roles, project highlights, outcomes, resume, and contact details; confirm what can be shared publicly.
