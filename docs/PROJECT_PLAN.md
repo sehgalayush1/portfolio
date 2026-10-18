@@ -14,7 +14,7 @@ Create a concise static portfolio that complements the resume and showcases expe
 ## Technical direction
 
 - Host the site on Azure Static Web Apps, starting with the Free plan if its current limits fit.
-- Keep the code in a personal GitHub repository and use GitHub Actions for checks and deployment.
+- Keep the code in a personal GitHub repository and use GitHub Actions for deployment; automated code checks are deferred.
 - Use one Static Web App resource with `main` as production and temporary pull-request previews; skip a persistent staging environment initially.
 - Attach the custom domain and Azure-managed TLS to production; pull-request previews use Azure-provided temporary URLs.
 - See [ARCHITECTURE.md](./ARCHITECTURE.md) for the technical decisions, constraints, and remaining questions.
@@ -26,7 +26,7 @@ Create a concise static portfolio that complements the resume and showcases expe
 - Create a minimal placeholder site using HTML, CSS, and simple JavaScript.
 - Keep the placeholder generic; do not include real portfolio content yet.
 - Put the code in a personal GitHub repository and create an Azure Static Web App.
-- Configure GitHub Actions to run initial checks, deploy `main`, and create temporary pull-request previews.
+- Configure GitHub Actions to deploy `main` and create and clean up temporary pull-request previews. Automated code checks are deferred.
 - Deploy to the Azure-provided URL. Do not buy or configure a custom domain in this phase.
 - **Deliverable:** a working placeholder site on its Azure URL, with production deployment and PR previews verified.
 

@@ -63,9 +63,9 @@ Phase 1 is limited to validating the static-site and deployment setup. Real port
 
 ### 6. Add GitHub Actions CI/CD
 
-- [ ] Add a GitHub Actions workflow to the repository for Azure Static Web Apps.
-- [ ] Configure the workflow to run the agreed checks and deploy the production branch.
-- [ ] Configure pull-request preview deployments and cleanup when a pull request closes.
+- [x] Add a GitHub Actions workflow to the repository for Azure Static Web Apps.
+- [x] Configure the workflow to deploy the production branch.
+- [x] Configure pull-request preview deployments and cleanup when a pull request closes.
 - [ ] Store the Azure deployment token as a GitHub Actions secret, not in workflow source.
 - [ ] Run the workflow and verify both a production deployment and a pull-request preview.
 
